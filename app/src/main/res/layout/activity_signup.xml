@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color_screen">
+
+
+    <EditText
+        android:id="@+id/signupusername"
+        android:background="@drawable/recyclerview_bg"
+        android:layout_width="234dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="140dp"
+        android:hint="Name"
+        android:textColorHint="#0C0808"
+        app:layout_constraintBottom_toTopOf="@+id/signupemail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.781" />
+
+    <EditText
+        android:id="@+id/signupemail"
+        android:layout_width="237dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/recyclerview_bg"
+        android:hint="Email"
+        android:textColorHint="#0C0808"
+        app:layout_constraintBottom_toTopOf="@+id/siguppassword"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.51"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Name" />
+
+    <EditText
+        android:id="@+id/siguppassword"
+        android:layout_width="233dp"
+        android:layout_height="41dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/recyclerview_bg"
+        android:hint="Password"
+        android:textColorHint="#090505"
+        app:layout_constraintBottom_toTopOf="@+id/Continue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.505"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Email" />
+
+    <Button
+        android:id="@+id/Continue"
+        android:background="@drawable/recyclerview_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="Continue"
+        app:backgroundTint="#24A8AE"
+        app:layout_constraintBottom_toTopOf="@+id/termsTxtFeild"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/termsTxtFeild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="By Signing in,you agree to our Terms and Conditions."
+        android:textColor="#130707"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.616"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="------------or Sign Up with------------"
+        android:textColor="#130909"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="243dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/recyclerview_bg"
+        android:text="Continue With Facebook"
+        app:backgroundTint="#175FCF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/termsTxtFeild"
+        app:layout_constraintVertical_bias="0.247" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginBottom="48dp"
+        android:text="Already have an account?"
+        android:textColor="#0E0303"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/signInButton"
+        app:layout_constraintHorizontal_bias="0.793"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/signInButton"
+        android:background="@drawable/recyclerview_bg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="Sign In"
+        android:textColor="#3263AE"
+        app:backgroundTint="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button2"
+        app:layout_constraintVertical_bias="0.796" />
+
+    <ImageView
+        android:id="@+id/SignUpImg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/Name"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
